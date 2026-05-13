@@ -153,7 +153,8 @@ class HLSStreamWriterDRM(HLSStreamWriter):
 
     def _write(self, segment: HLSSegment, result: Response, is_map: bool):
         key = segment.map.key if is_map and segment.map else segment.key
-        if key and key.method != "NONE":
+        if key and key.method == "AES-128":
+            log.debug("Key Method is AES-128, we will let streamlink to try and decrypt.")
             self.passthrough_encrypted = False
         super()._write(segment, result, is_map,)
 
