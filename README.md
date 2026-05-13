@@ -42,6 +42,6 @@ The plugin accepts a number of optional parameters:
 
 <LI>Use of this code to decrypt DRM is purely for academic purposes. You should not use this code for any illegal purposes and I take no responsibility for your actions</LI>
 <LI>This plugin is reliant on streamlink 8.4.0 which implemented the --stream-passthrough-encrypted command line option</LI>
-<LI>This plugin turns on the --stream-passthrough-encrypted option, which in turn will disable AES-128 enrypted HLS streams with embedded keys</LI>
+<LI>This plugin turns on the --stream-passthrough-encrypted option, but if AES-128 key is available, we'll turn it back off and allow streamlink to handle the decryption with the embedded keys</LI>
 <LI>This code has basically not been tested, so consider it pre-alpha software</LI>
 
