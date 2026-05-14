@@ -151,8 +151,8 @@ class FFMPEGMuxerDRM(FFMPEGMuxer):
                 # audio key again
                 if key == len(keys):
                     key = 1
-                self._cmd.extend([cmd, _])
                 self._cmd.extend(['-thread_queue_size', '4096'])
+                self._cmd.extend([cmd, _])
             else:
                 self._cmd.append(cmd)
         #self._cmd.extend(["-report"])
