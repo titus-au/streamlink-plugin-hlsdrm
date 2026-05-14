@@ -4,6 +4,7 @@ A [streamlink](https://github.com/streamlink/streamlink) plugin that extends the
 
 This is a reimplementation of [hlsdrm](https://github.com/jordandalley/dispatchwrapparr/blob/main/drmplugins/hlsdrm.py) by Jordan Dalley which in turn was originally based on [streamlink-plugin-dashdrm](https://github.com/titus-au/streamlink-plugin-dashdrm).
 
+An implementation of this plugin for dash MPD DRM streams can be found at [https://github.com/titus-au/streamlink-plugin-dashdrm](https://github.com/titus-au/streamlink-plugin-dashdrm).
 
 # Install and Use
 
