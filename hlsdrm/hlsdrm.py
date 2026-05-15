@@ -105,7 +105,7 @@ class FFMPEGMuxerDRM(FFMPEGMuxer):
     to ffmpeg
 
     We build a list of keys to use based on the value of command line option
-    --dashdrm-decryption-keys. If only 1 key is given, it's used for
+    --hlsdrm-decryption-keys. If only 1 key is given, it's used for
     all streams. If more than 1 key is given, the first key is used for
     video, and the remaining keys used for remaining streams. If the number
     of keys given is less than the number of streams, keys are looped
